@@ -26,8 +26,9 @@ Tento projekt vznikl jako **výuková aplikace**, jejímž cílem bylo:
 - Komunikace mezi desktop GUI a API
 
 ## Testovací dokumentace
-- [Testovací scénář a test cases (PDF)](Test_scenario_and_cases.pdf)
-- [API Test Report (PDF)](Insurance_Manager_Report.pdf)
+- [Testovací scénář a test cases (PDF)](Test_documents/Test_scenario_and_cases.pdf)
+- [API Test Report (PDF)](Test_documents/Insurance_Manager_Report.pdf)
+- [Postman results(PDF)](Test_documents/Postman_Results.json)
 
 
 ## Poznámka

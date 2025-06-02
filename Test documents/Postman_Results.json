@@ -1,0 +1,170 @@
+{
+	"id": "02bf78ff-6a9c-4534-90b7-7b299d543f33",
+	"name": "REST API basics: CRUD, test & variable",
+	"timestamp": "2025-06-02T13:21:49.896Z",
+	"collection_id": "45419570-a7e09223-cc4c-4d15-994e-1fe99c7676eb",
+	"folder_id": "45419570-71dc3c49-dac8-4f36-9eae-0ecdc9d6f8d0",
+	"environment_id": "0",
+	"totalPass": 8,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-06-02T13:21:49.514Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "e96844ab-6d57-4e63-a6b5-08d91bb283d3",
+			"name": "TC01 - Vytvoření pojištěnce",
+			"url": "http://127.0.0.1:8001/insured",
+			"time": 16,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Zpráva potvrzuje přidání": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Zpráva potvrzuje přidání": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				16
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Zpráva potvrzuje přidání": true
+				}
+			]
+		},
+		{
+			"id": "628fc050-0955-45a5-9d48-e295dfc00953",
+			"name": "TC02 - Výpis všech pojištěnců",
+			"url": "http://127.0.0.1:8001/insured",
+			"time": 12,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Seznam obsahuje záznamy": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Seznam obsahuje záznamy": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				12
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Seznam obsahuje záznamy": true
+				}
+			]
+		},
+		{
+			"id": "27c0cdcd-8bd5-4f65-be70-224466faf1bb",
+			"name": "TC03 - Úprava pojištěnce",
+			"url": "http://127.0.0.1:8001/insured/32",
+			"time": 20,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Zpráva potvrzuje úpravu": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Zpráva potvrzuje úpravu": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				20
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Zpráva potvrzuje úpravu": true
+				}
+			]
+		},
+		{
+			"id": "1e183ef6-e350-40e4-a874-011630bb8fe3",
+			"name": "TC04 - Smazání pojištěnce",
+			"url": "http://127.0.0.1:8001/insured/52",
+			"time": 22,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Zpráva potvrzuje smazání": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Zpráva potvrzuje smazání": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				22
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Zpráva potvrzuje smazání": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 70,
+	"collection": {
+		"requests": [
+			{
+				"id": "e96844ab-6d57-4e63-a6b5-08d91bb283d3",
+				"method": "POST"
+			},
+			{
+				"id": "628fc050-0955-45a5-9d48-e295dfc00953",
+				"method": "GET"
+			},
+			{
+				"id": "27c0cdcd-8bd5-4f65-be70-224466faf1bb",
+				"method": "PUT"
+			},
+			{
+				"id": "1e183ef6-e350-40e4-a874-011630bb8fe3",
+				"method": "DELETE"
+			}
+		]
+	}
+}
