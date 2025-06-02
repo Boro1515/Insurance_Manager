@@ -1,5 +1,5 @@
 # api.server.py
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, status
 from pydantic import BaseModel
 from mysql_database import (
     get_all_insured,
@@ -31,7 +31,7 @@ def get_insured():
         raise HTTPException(status_code=500, detail=str(e))
 
 # POST - Add new insured
-@app.post("/insured")
+@app.post("/insured", status_code=status.HTTP_201_CREATED)
 def add_insured_api(person: Insured):
     try:
         add_insured(person.jmeno, person.prijmeni, person.vek, person.telefon)

@@ -9,7 +9,7 @@ def delete_insured(insured_id):
         print(f"🗑️ DELETE ID: {insured_id}")
         response = requests.delete(f"{API_URL}/insured/{insured_id}")
         response.raise_for_status()
-        print(f"✅ Smazán pojištěenec s ID {insured_id}")
+        print(f"✅ Smazán pojištěnec s ID {insured_id}")
         show_insured()
     except requests.exceptions.RequestException as e:
         print("❌ DELETE chyba:", e)
@@ -26,7 +26,7 @@ def edit_insured(person):
         try:
             response = requests.put(f"{API_URL}/insured/{person['id']}", json=updated_data)
             response.raise_for_status()
-            print(f"✅ Upraven pojištěenec ID {person['id']}")
+            print(f"✅ Upraven pojištěnec ID {person['id']}")
             edit_window.destroy()
             show_insured()
         except requests.exceptions.RequestException as e:
@@ -63,7 +63,7 @@ def show_insured():
         response = requests.get(f"{API_URL}/insured")
         response.raise_for_status()
         insured_list = response.json()
-        print("🔄 GET pojištěců")
+        print("🔄 GET pojištěnců")
 
         if insured_list:
             for person in insured_list:
