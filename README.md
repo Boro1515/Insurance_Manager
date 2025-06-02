@@ -28,7 +28,7 @@ Tento projekt vznikl jako **výuková aplikace**, jejímž cílem bylo:
 ## Testovací dokumentace
 - [Testovací scénář a test cases (PDF)](Test_documents/Test_scenario_and_cases.pdf)
 - [API Test Report (PDF)](Test_documents/Insurance_Manager_Report.pdf)
-- [Postman results(PDF)](Test_documents/Postman_Results.json)
+- [Postman results(JSON)](Test_documents/Postman_Results.json)
 
 
 ## Poznámka
